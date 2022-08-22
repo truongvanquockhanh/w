@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+html {
+    font-size: 18x;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+.left {
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 935px;
+}
+.right{
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 935px;
+}
+.logo {
+    text-align: center;
+    margin: 20px auto;
+}
+.maincontent{
+    background-color: #EFEFEF;
+    width: 85%;
+    margin: 10px auto;
+    padding-top: 38px;
+    padding-bottom:38px;
+    text-align: center;
+}
+.titlemaincontent{
+    line-height: 21px;
+    text-align: center;
+    margin: 38px auto;
+    padding-top: 38px;
+    padding-bottom: 9px;
+}
+.descriptionmaincontent {
+    width: 70%;
+    margin: 18px auto;
+}
+.content {
+    margin-top: 40px;
+    width: 100%;
+  display: grid;
+  grid-template-columns: 7.5% auto auto auto 7.5%;
+  text-align: left;
+}
+.subcontent {
+    padding: 10px;
+    margin-bottom: 180px;
+}
+.subcontent b {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.copyright{
+    margin-left: 7.5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.sidebar {
+    background-color: #191718;
+    max-width: 100%;
+    height: inherit;
+}
+.sidebar span{
+    color: #AAAAAA;
+    display: block;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #5C5C5C;
+}
+.sidebar span:hover{
+    background-color:  #5C5C5C;
+}
+@media (max-width: 1280px){
+    html {
+        font-size: 16px;
+    }
+    .left{
+        width: 100%;
+        height: inherit;
+    }
+    .sidebar span{
+        color: #AAAAAA;
+        display: inline;
+        margin: 50px 0;
+        padding: 0 20px 0 10px;
+        border-right: 1px solid #5C5C5C;
+        border-bottom: 0;
+    }
+    .right{
+        margin-top: 100px;
+        width: 100%;
+    }
+    .content {
+        grid-template-columns: 0 auto auto auto 0;
+    }
+}
+@media (max-width: 500px){
+    html{
+        font-size: 14.5px;
+    }
+    .subcontent {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-bottom: 50px;
+    }
+
+}
